@@ -1,0 +1,220 @@
+/*Colours used:  #3c454e ,  #5f6d76 ,  #830707, #ffff, #000*/
+
+/*general*/
+body {
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
+}
+
+main {
+	padding-top: 1rem;
+	padding-bottom: 100px;
+	font-size: 0.75rem;
+}
+
+header {
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+}
+
+h1 {
+	color: whitesmoke;
+	margin-left: 1rem;
+	font-family: 'Permanent Marker', cursive;
+}
+
+figure {
+	padding-top: 1rem;
+	background-color: #3c454e;
+	color: white;
+	border-radius: 20px;
+}
+
+figure:hover {
+	box-shadow: 5px 5px 20px #5f6d76;
+}
+
+
+.logo {
+	height: 200px;
+	display: inline;
+	float: left;
+}
+
+footer {
+/*		padding-top: 350px;*/
+		text-align: center;
+		background: linear-gradient( transparent, black, black);
+		height: 150px;
+		width: 100%;
+		bottom: 0;
+		color: white;
+	}
+
+.social_media_icon {
+		height: 30px;
+		width: 30px;
+}
+/* Main Content */
+
+
+
+
+
+/*styling mobile nav*/
+
+nav {
+	background-color: black;
+	margin-bottom: -1rem;
+}
+
+nav > ul {
+	width: 100%;
+	display: flex;
+}
+
+nav > ul li {
+	display: inline;
+	width: 33%;
+	text-align: center;
+	font-size: 1rem;
+	font-family: 'Permanent Marker', cursive;
+}
+
+nav > ul li:hover {
+	background-color: #830707;
+	color: #fff;
+}
+
+nav > ul li a {
+	display: inline-block;
+	padding: 1rem;
+	color: #fff;
+}
+
+nav > ul li a:hover {
+	background-color: #830707;
+	color: #fff;
+}
+
+/*styling dropdown list-item*/
+.dropdown {
+	position: relative;
+}
+
+/*hide the nested list by default*/
+.dropdown > ul {
+	display: none;
+	position: absolute;
+	top: 3rem;
+	left: 0;
+	z-index: +10;
+}
+
+/*if dropdown list-item is hovered
+display the nested list*/
+.dropdown:hover > ul {
+	display: block;
+}
+
+/*while the dropdown is hovered
+keep the main link highlighted*/
+.dropdown:hover > a {
+	background-color: #830707;
+}
+
+.dropdown ul a {
+	display: block;
+	color: black;
+	padding: 1rem 2rem;
+	background-color: #aaa;
+}
+
+.dropdown ul a:hover {
+	color: white;
+	background-color: #5f6d76;
+}
+
+nav .small {
+	display: inline;
+	background-color: black;
+}
+
+.large {
+	display: none;
+}
+
+/* tablet */
+@media only screen and (min-width:50rem) {
+
+	header {
+		height: 300px;
+	}
+
+	main {
+		font-size: 1rem;
+	}
+	
+	img {
+		width: 75%;
+	}
+
+	.logo {
+		height: 300px;
+		width: auto;
+	}
+
+	.small {
+		display: none;
+	}
+
+	.large {
+		display: inline;
+	}
+
+	nav {
+		background-color: none;
+		margin-bottom: 0;
+	}
+
+	nav > ul {
+		width: auto;
+		display: flex;
+	}
+
+	nav > ul li {
+		display: inline;
+		width: auto;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	nav > ul li a {
+		display: inline-block;
+		padding: 1rem;
+		color: #fff;
+		background-color: #000;
+	}
+}
+
+/* desktop */
+@media only screen and (min-width:70rem) {
+
+	header {
+		height: 400px;
+	}
+
+	.logo {
+		height: 400px;
+		width: auto;
+	}
+	h1 {
+	margin-left: 3rem;
+}
+
+}
